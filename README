@@ -1,0 +1,11 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1151
+
+Instead of typing %s/foo/bar/gc every time you want to search and replace in a file simply call this function and get prompted for the text to find and what to replace it with.
+
+I looked for something like this, but didn't find it, hope it's useful (my first, and admittedly unimpressive script)
+
+p.s.
+
+You might want to tack "I" onto the regexp to make it case sensitive, so it'll look like this:
+execute "%s/".l:find."/".l:replace."/gcI"
+
